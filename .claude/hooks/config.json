@@ -1,0 +1,5 @@
+{
+  "enforce_ds_blocking": true,
+  "skill_trace_output": "consumer_summary",
+  "skill_trace_file": "resonance-skill-traces.json"
+}
