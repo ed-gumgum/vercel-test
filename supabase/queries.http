@@ -1,0 +1,39 @@
+@supabaseUrl = https://vcrvdnlpxaguiggjbpbo.supabase.co
+@publishableKey = sb_publishable_OXmDOHYuncW_OUNN3008aQ_n92tRVja
+@userAccessToken = eyJhbGciOiJFUzI1NiIsImtpZCI6IjhjNGUwZTAwLWQ3MTEtNDk0OS04NGZiLTA2YmJlMGRkZDAzNSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3ZjcnZkbmxweGFndWlnZ2picGJvLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIxY2YxYTUzYy0zNDM2LTRjMGMtYTM0OS00NTAyYWNlODA2YzIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzgzOTU2MDEzLCJpYXQiOjE3ODM5NTI0MTMsImVtYWlsIjoiZWR3YXJkLmd1ZXJ0aW5AZ3VtZ3VtLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZ29vZ2xlIiwicHJvdmlkZXJzIjpbImdvb2dsZSJdfSwidXNlcl9tZXRhZGF0YSI6eyJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVhaNkJ4TWM2OTVhQWVNWko4NUVRTzl5QzBXX0tHV05YZ3ludEhRSDJ4dWlxR1pRPXM5Ni1jIiwiY3VzdG9tX2NsYWltcyI6eyJoZCI6Imd1bWd1bS5jb20ifSwiZW1haWwiOiJlZHdhcmQuZ3VlcnRpbkBndW1ndW0uY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZ1bGxfbmFtZSI6IkVkd2FyZCBHdWVydGluIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tIiwibmFtZSI6IkVkd2FyZCBHdWVydGluIiwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVhaNkJ4TWM2OTVhQWVNWko4NUVRTzl5QzBXX0tHV05YZ3ludEhRSDJ4dWlxR1pRPXM5Ni1jIiwicHJvdmlkZXJfaWQiOiIxMTU5NzY5Njg2NjU2NDYzOTUxNDAiLCJzdWIiOiIxMTU5NzY5Njg2NjU2NDYzOTUxNDAifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJvYXV0aCIsInRpbWVzdGFtcCI6MTc4Mzk1MjQxM31dLCJzZXNzaW9uX2lkIjoiZDBjNzRkZGUtMzc1MC00ZjY4LWE4YTUtZjZkZmYyNDExOTk5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.v6ovT1j3IWN4LTjFrzqO8MXPyqc_kB7JnJ3unFwXf5M35CJS9OOC7oFjOT7s_YwyxSZEs27W4lqMUKJJSpKbWA
+
+POST {{supabaseUrl}}/functions/v1/hello-world
+Authorization: Bearer {{publishableKey}}
+apikey: {{publishableKey}}
+Content-Type: application/json
+
+{
+    "name": "Functions"
+}
+
+###
+
+POST {{supabaseUrl}}/functions/v1/set-value
+Authorization: Bearer {{publishableKey}}
+apikey: {{publishableKey}}
+Content-Type: application/json
+
+{
+    "name": "Aimie",
+    "key": "age",
+    "value": "19"
+}
+
+###
+
+POST {{supabaseUrl}}/functions/v1/set-value-user
+Authorization: Bearer {{userAccessToken}}
+Content-Type: application/json  
+
+{
+    "name": "Aimie",
+    "key": "age",
+    "value": "40"
+}
+
+###

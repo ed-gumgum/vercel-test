@@ -12,3 +12,8 @@
     padding:.5em;
     min-height: 10em;
 }
+
+.view-data, .sumbit-data {
+    position: relative;
+    width: 30%;
+}

@@ -1,5 +1,5 @@
 
-import { Button, Heading, Text, Flex , Separator } from '@gumgum/resonance'
+import { Button, Heading, Text, Flex } from '@gumgum/resonance'
 
 function Welcome() {
   return (

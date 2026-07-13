@@ -1,4 +1,4 @@
-import { Container, Section, Grid, Card , Separator } from '@gumgum/resonance'
+import { Container, Section, Grid, Card } from '@gumgum/resonance'
 
 function Dashboard() {
   return (

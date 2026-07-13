@@ -2,11 +2,11 @@
 import { ResonanceProvider } from '@gumgum/resonance'
 import defaultFoundation from '@gumgum/resonance/foundation.json'
 import '@gumgum/resonance/styles.css'
-import React from 'react'
 
 import './App.css'
 import Welcome from './Welcome'
 import Dashboard from './Dashboard'
+import SupabaseData from './SupabaseData'
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
       <div className="wrapper"> 
       <Welcome />
       <Dashboard />
+      <SupabaseData />
       </div>
     </ResonanceProvider>
   )
